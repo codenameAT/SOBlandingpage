@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standing On Business</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+ h2 {text-align: center;}
+ p {text-align: center}
+    </style>
+</head>
+<body class="active">
+ 
+    <div class="wrapper">
+        <!--Top menu -->
+        <div class="sidebar">
+           <!--profile image & text-->
+            <!--menu item-->
+            <div class="profile">
+                <img src="profile.avif" alt="profile_picture">
+                <h3>Aahil Turner</h3>
+                <p>Writer</p>
+            </div>
+            <ul>
+                <li>
+                    <a href="https://www.amazon.com/stores/Aahil-Turner/author/B0BY199SRJ?ref=ap_rdr&store_ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true" class="active">
+                        <span class="icon"><i class="fas fa-book"></i></span>
+                        <span class="item">bookstore</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.X.com/southeastAT">
+                        <span class="icon"><i class="fas fa-user"></i></span>
+                        <span class="item">Twitter/X</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/aahilturner">
+                        <span class="icon"><i class="fas fa-camera"></i></span>
+                        <span class="item">Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto: aahilturner1991@icloud.com">
+                        <span class="icon"><i class="fas fa-pen"></i></span>
+                        <span class="item">Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="section">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <div class="container">
+             <h2> Standing On Business Publications</h2>
+             <br>
+             <hr><br>
+             <h2> On Sale Now</h2>
+             
+             <div class="w3-content w3-display-container">
+                <img class="mySlides" src="bhs.webp" style="width: 60%">
+                <img class="mySlides" src="btw.webp" style="width: 60%"><br>
+             <hr><br>
+             <h2>Coming Soon</h2>
+             <img src="SF2.jpeg" alt="Shadow Face" class="center"><br>
+             <hr><br>
+             <h2>Biography</h2>
+             <p> Born Dennis Turner on September , 16th 1991 on the southeastern side of Washington, DC to a West Indian family with Nigerian origins. Aahil Eliki Abdul-Qadir Turner has always been what you call, "The Man of The Shadows". Growing up came with a lot of challenges, which includes neigbhorhood rights and other childhood mischiefs. But deep down Aahil was always the one to play the fly on the wall. Fast forward a little and you will find 13 year old Aahil sitting in his room, flipping through old school yearbooks, until he comes across the poetry section. Intrigued by the spoken word of his schoolmates, Aahil decided to pick up a pad and write his first poem. Who would have thought this was the start of his creative outlet? Aahil's first poem "Goodbye Forever" which was dedicated to his uncles who were killed due to gun violence went on to take him to the semi-finals in his first competition. Further down the line you will find Aahil, age 30, father of two finishing up his first book "Don't Worry, I'll Be Home Soon". A book which detailed his life as a father which came with a lot of highs and lows. Aahil after converting to Islam in 2015 changed his writing style to match his Islamic identity. But enough of the introduction, the only way to truly get an idea of who Aahil Turner is to buy one of his books. Which are on sale now. </p>
+            </div>
+        </div>
+
+    </div>
+  <script>
+  var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
+    var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+  </script>
+  <footer>
+    <hr>
+    <h5>designer: Aahil Turner</h5>
+    <h5>&copy; copyright reserved</h5>
+  </footer>
+</body>
+</html>
